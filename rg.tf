@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "ketheni" {
-  name     = "Ketheni"
+  name     = "Ketheni_rg"
   location = "West Europe"
 }
