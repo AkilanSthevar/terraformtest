@@ -1,24 +1,19 @@
-variable "name" {
-  description = "(Required) name of the resource group"
-  default = "cloud"
+variable "tenant_id" { 
+    type = string
+    description = "Tenant id"
+}
+  
+variable "subscription_id" { 
+    type = string
+    description = "subscription_id IUD"
 }
 
-variable "env" {
-  description = "(Required) name of the resource group"
-  default = "dev"
+variable "client_id" { 
+    type = string
+    description = "client_id ID"
 }
 
-variable "location" {
-  description = "(Required) location where this resource has to be created"
-  default = "westeurope"
-}
-
-variable "team_tag" {
-  description = "(Optional) tag a team"
-  default = "DevOps"
-}
-
-variable "creator" {
-  description = "(Optional) tag a creator"
-  default =   "Akilan"
+variable "secrect_id" { 
+    type = string
+    description = "secrect_id password"
 }
