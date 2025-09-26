@@ -8,10 +8,6 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "~> 3.0"
     }
-    random = {
-      source  = "hashicorp/random"
-      version = "~> 3.0"
-    }
   }
   # 3. Terraform Cloud Configuration
   cloud {
@@ -30,7 +26,3 @@ provider "azurerm" {
   client_id       = var.client_id
   client_secret   = var.secrect_id
   }
-
-# 3. Terraform Resource Block: Define a Random Pet Resource
-resource "random_pet" "aksrandom" {
-}
